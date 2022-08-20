@@ -1,0 +1,21 @@
+.container{
+  
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+
+    .buttonLogout{
+      margin: 1rem;
+      border-radius: 50%;
+      border: none;
+      padding: .42rem .3rem;
+      cursor: pointer;
+      background-color: #5179ff;
+      color: #fff;
+      font-weight: 600;
+    }
+    
+  }
+}
