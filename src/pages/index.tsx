@@ -14,7 +14,7 @@ export default function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState<string | null | undefined | any>("");
 
   async function handleSigninUser() {
     await firebase.auth().signInWithEmailAndPassword(email, password)
@@ -23,17 +23,12 @@ export default function Signin() {
       await firebase.firestore().collection('users')
       .doc(value.user?.uid)
       .get()
-      .then((snapshot) => {
+      .then((snapshot: any)=> {
         setUser({
           email: value.user?.email,
           password: snapshot.data().password,
         })
       })
-       
-        // toast.success('Seja bem vindo')
-        // setEmail('')
-        // setPassword('')
-
         router.push('/home')
     })
     .catch((error) => {
