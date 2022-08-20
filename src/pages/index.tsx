@@ -71,7 +71,7 @@ export default function Signin() {
         <button className={styles.signinwith}>
           <img src="/images/logoGoogle.png" alt="Logo do Google" className={styles.logo} />
       </button>
-        <a className={styles.signup} href="/signup">Não tem um login? Cadastre-se!</a>
+        <Link className={styles.signup} href="/signup">Não tem um login? Cadastre-se!</Link>
       </div>
     </div>
   );

@@ -87,7 +87,7 @@ export default function Signup() {
       <button className={styles.signinwith}>
           <img src="/images/logoGoogle.png" alt="Logo do Google" className={styles.logo} />
       </button>
-      <a className={styles.signup} href="/">Já tem uma conta? Faça seu login.</a>
+      <Link className={styles.signup} href="/">Já tem uma conta? Faça seu login.</Link>
       </div>
     </div>
   )
